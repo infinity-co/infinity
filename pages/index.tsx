@@ -7,6 +7,7 @@ import Page from '../layouts/page'
 // UI
 import { Row } from '../ui/row'
 import { Button } from '../ui/button'
+import { colors, responsive, spacing } from '../ui/theme'
 
 class Home extends Component {
   render() {
@@ -46,24 +47,67 @@ class Home extends Component {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-height: calc(100vh - 150px);
-            height: calc(100vh - 150px);
+            flex-wrap: wrap;
+            padding-bottom: ${spacing.xxxLarge};
           }
 
           h1 {
-            font-size: 48px;
-            margin-bottom: 32px;
+            font-size: 36px;
+            margin-bottom: ${spacing.medium};
+            color: ${colors.black};
           }
 
           h2 {
-            color: #686a7a;
-            font-size: 26px;
-            line-height: 40px;
-            margin-bottom: 40px;
+            color: ${colors.gray.default};
+            font-size: 20px;
+            line-height: 28px;
+            margin-bottom: ${spacing.xLarge};
           }
 
           div {
-            padding-right: 32px;
+            padding-right: ${spacing.medium};
+            order: 1;
+            flex-basis: 100%;
+          }
+
+          img {
+            order: 0;
+            max-width: 75%;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: ${spacing.xxLarge};
+            flex-basis: 100%;
+          }
+
+          @media ${responsive.small} {
+            main {
+              max-height: calc(100vh - 150px);
+              height: calc(100vh - 150px);
+              padding-bottom: 0;
+            }
+
+            h1 {
+              font-size: 48px;
+              margin-bottom: ${spacing.medium};
+            }
+
+            h2 {
+              font-size: 26px;
+              line-height: 40px;
+              margin-bottom: ${spacing.xxLarge};
+            }
+
+            img {
+              order: 1;
+              max-width: 425px;
+              flex-basis: 50%;
+            }
+
+            div {
+              order: 0;
+              flex-basis: 50%;
+            }
           }
         `}</style>
       </Page>
