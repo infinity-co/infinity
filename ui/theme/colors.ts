@@ -5,10 +5,10 @@ export const colors = {
     default: '#3B3DBF',
     soft: '#edf2ff',
     lighter: '#d9e3ff',
-    dark: '#003ad4'
+    dark: '#3638AE'
   },
   gray: {
-    default: '#777677',
+    default: '#686a7a',
     darker: '#222222',
     lighter: '#dddfe4'
   },
