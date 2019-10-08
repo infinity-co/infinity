@@ -8,6 +8,7 @@ import Page from '../layouts/page'
 import { Row } from '../ui/row'
 import { Button } from '../ui/button'
 import { colors, responsive, spacing } from '../ui/theme'
+import { OptInForm } from '../components/opt-in-form'
 
 class Home extends Component {
   render() {
@@ -30,7 +31,7 @@ class Home extends Component {
               <h1>Manage your finances with ease</h1>
               <h2>It’s never been that easy to understand about your finance.</h2>
 
-              <Button type="button">Join the beta list</Button>
+              <OptInForm />
             </div>
 
             <img src="/static/infinity.png" alt="" />
