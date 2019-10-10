@@ -21,7 +21,7 @@ interface InputProps {
 }
 
 export class Input extends PureComponent<InputProps> {
-  defaultProps = {
+  static defaultProps = {
     type: 'text',
     disabled: false,
     required: false
