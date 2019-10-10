@@ -13,7 +13,7 @@ interface ButtonSkin {
 
 export interface ButtonProps extends ButtonSkin {
   onClick?: (e: any) => void
-  type: 'button' | 'submit' | 'reset'
+  type?: 'button' | 'submit' | 'reset'
 }
 
 export interface ButtonHrefProps extends ButtonSkin {

@@ -23,7 +23,8 @@ export class Button extends PureComponent<ButtonProps> {
     block: false,
     disabled: false,
     outline: false,
-    size: SIZE_MEDIUM
+    size: SIZE_MEDIUM,
+    type: 'button'
   }
 
   render() {
@@ -95,6 +96,11 @@ export class Button extends PureComponent<ButtonProps> {
             background-color: ${colors.primary.lighter};
             color: ${colors.primary.default};
             border-color: ${colors.primary.lighter};
+          }
+
+          .block {
+            display: block;
+            width: 100%;
           }
         `}</style>
       </button>
