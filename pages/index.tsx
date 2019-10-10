@@ -6,7 +6,6 @@ import Page from '../layouts/page'
 
 // UI
 import { Row } from '../ui/row'
-import { Button } from '../ui/button'
 import { colors, responsive, spacing } from '../ui/theme'
 import { OptInForm } from '../components/opt-in-form'
 
