@@ -8,6 +8,10 @@ export const api = axios.create({
 
 api.interceptors.response.use(
   response => {
+    if (response.data && response.data.data) {
+      return response.data.data
+    }
+
     if (response.data) {
       return response.data
     }
