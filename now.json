@@ -6,7 +6,9 @@
   "build": {
     "env": {
       "STATICKIT_ID": "@infinity-statickit-id",
-      "AUTHENTICATION_SERVICE": "@infinity-authentication-service"
+      "AUTHENTICATION_SERVICE": "@infinity-authentication-service",
+      "COOKIE_DOMAIN": "@infinity-cookie-domain",
+      "COOKIE_NAME": "@infinity-cookie-name"
     }
   },
   "github": {
