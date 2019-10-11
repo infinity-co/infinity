@@ -1,6 +1,7 @@
 // Packages
-import React, { Component, FormEvent } from 'react'
 import { autoBind } from 'react-extras'
+import React, { Component, FormEvent } from 'react'
+import Router from 'next/router'
 
 // Layouts
 import Page from '../layouts/page'
@@ -12,6 +13,7 @@ import { colors, radius, spacing } from '../ui/theme'
 
 // Utils
 import { api } from '../utils/api'
+import { saveCookie } from '../utils/cookies'
 
 interface LoginState {
   email: string
@@ -32,7 +34,9 @@ class Login extends Component<any, LoginState> {
     const { email } = this.state
 
     try {
-      await api.post('/auth', { email })
+      const { token } = await api.post('/auth', { email })
+      saveCookie(process.env.COOKIE_NAME, token)
+      Router.push('/dashboard')
     } catch (error) {
       console.error({ error })
     }
