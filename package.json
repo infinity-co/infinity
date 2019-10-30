@@ -41,7 +41,7 @@
     "lint-staged": "9.4.2",
     "prettier": "1.18.2",
     "react-addons-test-utils": "15.6.2",
-    "react-test-renderer": "16.10.2",
+    "react-test-renderer": "16.11.0",
     "typescript": "3.6.4",
     "xo": "0.25.3"
   },
