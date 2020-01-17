@@ -783,13 +783,6 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@babel/runtime@^7.6.0":
-  version "7.6.2"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.6.2.tgz#c3d6e41b304ef10dcf13777a33e7694ec4a9a6dd"
-  integrity sha512-EXxN64agfUqqIGeEjI5dL5z0Sw0ZwWo1mLTi4mQowCZ42O59b7DRpZAnTC6OqdF28wMBMFKNb/4uFGrVaigSpg==
-  dependencies:
-    regenerator-runtime "^0.13.2"
-
 "@babel/runtime@^7.6.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.8.3.tgz#0811944f73a6c926bb2ad35e918dcc1bfab279f1"
@@ -1032,19 +1025,19 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@statickit/core@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@statickit/core/-/core-1.2.0.tgz#8f908d55f2f565bdc1f7875eca8f6d1b556af211"
-  integrity sha512-omi77xHROWy6GbcK+QuUCBPp2z5kuJj3Rku5fmj8dZ1lU4K1Wl5ikKPI1zdwl/Wq/YeY8YOoxricIWsc+vrzCg==
+"@statickit/core@^2.1.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@statickit/core/-/core-2.2.0.tgz#219036acbe765af6f6b537738d8b2ed82e3a89df"
+  integrity sha512-cOuI8T/gCSWUp/wGwBud3j+VlVupSWCOlVsSZ1RA5+1AulLcwzpsUAjuA/eM+2nJfrQooWoRVcK0BD/PL7DdIg==
   dependencies:
-    "@babel/runtime" "^7.6.0"
+    "@types/promise-polyfill" "^6.0.3"
 
-"@statickit/react@^1.0.0-beta.7":
-  version "1.0.0-beta.7"
-  resolved "https://registry.yarnpkg.com/@statickit/react/-/react-1.0.0-beta.7.tgz#b41822203609b20f9f88bdbb417ce6055910ce26"
-  integrity sha512-y5osfOpl92LcAvuzbkgOKO6zwbieGsapEkNGwgqIxiKFwinNuNSjO27E6yz7b5kx+gQt70+YUCHVIrNsh/RdjQ==
+"@statickit/react@^2.0.0":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@statickit/react/-/react-2.0.1.tgz#12251f7a23209866f3398299bbca51456e26f37f"
+  integrity sha512-xxMnji0MxLEi4VuWk6N38vFsYoN7HueGC2hK6Ormlshy5qFAJ6m4I1evF5xV2LWe2Wxfmdt/+2PjnpyK77JteQ==
   dependencies:
-    "@statickit/core" "^1.2.0"
+    "@statickit/core" "^2.1.0"
 
 "@szmarczak/http-timer@^1.1.2":
   version "1.1.2"
@@ -1156,6 +1149,11 @@
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
+
+"@types/promise-polyfill@^6.0.3":
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/@types/promise-polyfill/-/promise-polyfill-6.0.3.tgz#e2f38fcd244a9e0df2cc7528e0711abcbc707b5e"
+  integrity sha512-f/BFgF9a+cgsMseC7rpv9+9TAE3YNjhfYrtwCo/pIeCDDfQtE6PY0b5bao2eIIEpZCBUy8Y5ToXd4ObjPSJuFw==
 
 "@types/prop-types@*":
   version "15.7.2"
