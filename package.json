@@ -23,7 +23,7 @@
     "nookies": "^2.0.8",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-extras": "^1.0.0"
+    "react-extras": "^2.0.0"
   },
   "devDependencies": {
     "@types/jest": "24.0.21",
