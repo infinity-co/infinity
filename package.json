@@ -34,7 +34,7 @@
     "dotenv": "8.2.0",
     "enzyme": "3.10.0",
     "enzyme-adapter-react-16": "1.15.1",
-    "eslint-config-prettier": "6.5.0",
+    "eslint-config-prettier": "6.15.0",
     "eslint-plugin-react": "7.16.0",
     "husky": "4.0.10",
     "jest": "24.9.0",
