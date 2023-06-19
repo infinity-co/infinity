@@ -783,13 +783,6 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@babel/runtime@^7.6.0":
-  version "7.6.2"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.6.2.tgz#c3d6e41b304ef10dcf13777a33e7694ec4a9a6dd"
-  integrity sha512-EXxN64agfUqqIGeEjI5dL5z0Sw0ZwWo1mLTi4mQowCZ42O59b7DRpZAnTC6OqdF28wMBMFKNb/4uFGrVaigSpg==
-  dependencies:
-    regenerator-runtime "^0.13.2"
-
 "@babel/runtime@^7.6.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.8.3.tgz#0811944f73a6c926bb2ad35e918dcc1bfab279f1"
@@ -1032,19 +1025,21 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@statickit/core@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@statickit/core/-/core-1.2.0.tgz#8f908d55f2f565bdc1f7875eca8f6d1b556af211"
-  integrity sha512-omi77xHROWy6GbcK+QuUCBPp2z5kuJj3Rku5fmj8dZ1lU4K1Wl5ikKPI1zdwl/Wq/YeY8YOoxricIWsc+vrzCg==
+"@statickit/core@^2.5.1":
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/@statickit/core/-/core-2.5.1.tgz#3f6004ac87c0042e2b0b353a7bbc062da9b6fac1"
+  integrity sha512-DaAoeD4V/Kf1jpzqTEZ/NatYg5b3TUgDN/mbvhUguE6aE00ePVGlX1W790rDGc5rQHMkf1rN5iv428Z1gMNe+g==
   dependencies:
-    "@babel/runtime" "^7.6.0"
+    "@types/promise-polyfill" "^6.0.3"
+    fetch-ponyfill "^6.1.0"
+    promise-polyfill "^8.1.3"
 
-"@statickit/react@^1.0.0-beta.7":
-  version "1.0.0-beta.7"
-  resolved "https://registry.yarnpkg.com/@statickit/react/-/react-1.0.0-beta.7.tgz#b41822203609b20f9f88bdbb417ce6055910ce26"
-  integrity sha512-y5osfOpl92LcAvuzbkgOKO6zwbieGsapEkNGwgqIxiKFwinNuNSjO27E6yz7b5kx+gQt70+YUCHVIrNsh/RdjQ==
+"@statickit/react@^2.0.0":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@statickit/react/-/react-2.1.1.tgz#3d67a57190a0a6b36a2ceeeec7ff8585ca2a94c5"
+  integrity sha512-zZGQQAw7D3GHzBb4NHeNOSeM0UmNn6496qq9Fg2RVPOKwvDZoJ6YovOnZVi1x5GJdF8BSUbLrlv1CNihFK3hDw==
   dependencies:
-    "@statickit/core" "^1.2.0"
+    "@statickit/core" "^2.5.1"
 
 "@szmarczak/http-timer@^1.1.2":
   version "1.1.2"
@@ -1156,6 +1151,11 @@
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
+
+"@types/promise-polyfill@^6.0.3":
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/@types/promise-polyfill/-/promise-polyfill-6.0.4.tgz#c56670c70c601264c67191a85875fe2cf98a4cfd"
+  integrity sha512-GSCjjH6mDS8jgpT22rEOkZVqZcYj7i9AHJu4ntpvoohEpa0mLAKP/Kz3POMKqABaFsS4TyNHOeoyWpzycddcoQ==
 
 "@types/prop-types@*":
   version "15.7.2"
@@ -3965,6 +3965,13 @@ fb-watchman@^2.0.0:
   dependencies:
     bser "^2.0.0"
 
+fetch-ponyfill@^6.1.0:
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/fetch-ponyfill/-/fetch-ponyfill-6.1.1.tgz#dd8cdff0741a98bc89aeb85820302beb9bcc0bf4"
+  integrity sha512-rWLgTr5A44/XhvCQPYj0X9Tc+cjUaHofSM4lcwjc9MavD5lkjIhJ+h8JQlavPlTIgDpwhuRozaIykBvX9ItaSA==
+  dependencies:
+    node-fetch "~2.6.0"
+
 figgy-pudding@^3.5.1:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/figgy-pudding/-/figgy-pudding-3.5.1.tgz#862470112901c727a0e495a80744bd5baa1d6790"
@@ -6510,6 +6517,13 @@ node-fetch@2.6.0:
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
   integrity sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
 
+node-fetch@~2.6.0:
+  version "2.6.7"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
+  integrity sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
+  dependencies:
+    whatwg-url "^5.0.0"
+
 node-int64@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/node-int64/-/node-int64-0.4.0.tgz#87a9065cdb355d3182d8f94ce11188b825c68a3b"
@@ -7334,6 +7348,11 @@ promise-inflight@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
   integrity sha1-mEcocL8igTL8vdhoEputEsPAKeM=
+
+promise-polyfill@^8.1.3:
+  version "8.2.3"
+  resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-8.2.3.tgz#2edc7e4b81aff781c88a0d577e5fe9da822107c6"
+  integrity sha512-Og0+jCRQetV84U8wVjMNccfGCnMQ9mGs9Hv78QFe+pSDD3gWTpz0y+1QCuxy5d/vBFuZ3iwP2eycAkvqIMPmWg==
 
 promise@7.1.1:
   version "7.1.1"
@@ -8855,6 +8874,11 @@ tr46@^1.0.1:
   dependencies:
     punycode "^2.1.0"
 
+tr46@~0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
+  integrity sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==
+
 traverse@0.6.6:
   version "0.6.6"
   resolved "https://registry.yarnpkg.com/traverse/-/traverse-0.6.6.tgz#cbdf560fd7b9af632502fed40f918c157ea97137"
@@ -9179,6 +9203,11 @@ wcwidth@^1.0.1:
   dependencies:
     defaults "^1.0.3"
 
+webidl-conversions@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
+  integrity sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==
+
 webidl-conversions@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-4.0.2.tgz#a855980b1f0b6b359ba1d5d9fb39ae941faa63ad"
@@ -9275,6 +9304,14 @@ whatwg-mimetype@^2.1.0, whatwg-mimetype@^2.2.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/whatwg-mimetype/-/whatwg-mimetype-2.3.0.tgz#3d4b1e0312d2079879f826aff18dbeeca5960fbf"
   integrity sha512-M4yMwr6mAnQz76TbJm914+gPpB/nCwvZbJU28cUD6dR004SAxDLOOSUaB1JDRqLtaOV/vi0IC5lEAGFgrjGv/g==
+
+whatwg-url@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-5.0.0.tgz#966454e8765462e37644d3626f6742ce8b70965d"
+  integrity sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==
+  dependencies:
+    tr46 "~0.0.3"
+    webidl-conversions "^3.0.0"
 
 whatwg-url@^6.4.1:
   version "6.5.0"
