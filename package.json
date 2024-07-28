@@ -43,7 +43,7 @@
     "react-addons-test-utils": "15.6.2",
     "react-test-renderer": "16.11.0",
     "typescript": "3.6.4",
-    "xo": "0.25.3"
+    "xo": "0.59.3"
   },
   "xo": {
     "extends": [
